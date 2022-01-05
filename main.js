@@ -18,8 +18,19 @@ fruits.shift();// remove from the beginning
 console.log(fruits);
 
 // remove from the middle
-fruits.splice(1, 1); // remove from the middle
+fruits.splice(1, 2); // remove from the middle
 console.log(fruits);
+
+// add to the middle
+fruits.splice(1, 0, "Pineapple"); // add to the middle
+console.log(fruits);
+
+// sort
+fruits.sort();// sort alphabetically
+console.log(fruits);
+
+
+
 
 
 
