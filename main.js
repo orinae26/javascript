@@ -1,16 +1,23 @@
-//for loops
-console.log("hello world");
-//for loops 
+//loop through arrays
 
-for(let i = 0; i<10; i++){
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        iscompleted:true
+    },
+    {
+        id: 2,
+        text: 'do 300 pushups',
+        iscompleted: true
+    },
+    {
+        id: 1,
+        text: 'Take a shower',
+        iscompleted: true
+    }
+];
 
-    console.log(i);
-
-};
-
-//while loops
-let i = 0; // initializing the variable outside the loop
-while (i<10){
-    console.log(i);
-    i++;
+for (let i = 0; i < todos.length; i++ ){
+    console.log(todos[i].text);
 };
