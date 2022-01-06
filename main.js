@@ -27,4 +27,9 @@ const todos = [
 
 console.log(todos[2].isCompleted);
 
+// jSON.stringify
+
+const todoJSON = JSON.stingify(todos);
+console.log(todoJSON);
+
 
