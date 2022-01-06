@@ -1,39 +1,37 @@
 
-// arrays of fruits
-const fruits = ["Apple", "Orange", "Banana", "Pear"];
+// object literals
 
-fruits.push("Kiwi"); // add to the end of the array
-console.log(fruits);
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    hobbies: ["music","movies", "sports"],
+    address: {
+        street: "50 main st",
+        city: "Boston",
+        state: "MA"
+    },
+};
 
-fruits.unshift("Strawberry"); // add to the beginning
+//print the first andsecond name
+console.log(person.firstName,person.lastName);
 
-console.log(fruits);
+//print 2nd hobby
+console.log(person.hobbies[1]);
 
-// remove from the end
-fruits.pop();// remove from the end
-console.log(fruits);
+// print city
+console.log(person.address.city);
 
-// remove from the beginning
-fruits.shift();// remove from the beginning
-console.log(fruits);
+//destructuring
+const{firstName, lastName, address:{city}} = person;
 
-// remove from the middle
-fruits.splice(1, 2); // remove from the middle
-console.log(fruits);
+//print destructured values
+console.log (firstName, lastName, city);
+//add property
+person.email = "johndoe@gmail.com";
 
-// add to the middle
-fruits.splice(1, 0, "Pineapple"); // add to the middle
-console.log(fruits);
-
-// sort
-fruits.sort();// sort alphabetically
-console.log(fruits);
-
-
-
-
-
-
+//print new property
+console.log(person.email);
 
 
 
