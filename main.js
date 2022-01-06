@@ -12,12 +12,14 @@ const todos = [
         iscompleted: true
     },
     {
-        id: 1,
+        id: 3,
         text: 'Take a shower',
-        iscompleted: true
+        iscompleted: false
     }
 ];
-
-for (let i = 0; i < todos.length; i++ ){
-    console.log(todos[i].text);
-};
+//High order array methods
+//map
+const todoText = todos.map(function(todo){
+    return todo.text;
+});
+console.log(todoText);
